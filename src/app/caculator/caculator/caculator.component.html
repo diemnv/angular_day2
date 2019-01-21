@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <h1>Caculator</h1>
+  <label>Số thứ nhất: </label><br>
+  <input type="text" [(ngModel)]="number1"><br>
+  <label>Số thứ hai: </label><br>
+  <input type="text" [(ngModel)]="number2"><br><br>
+  <label>Phép tính: </label><br>
+  <div class=btn-wrapper>
+    <button (click)="onAdd()">+</button>
+    <button (click)="onSub()">-</button>
+    <button (click)="onMul()">*</button>
+    <button (click)="onDiv()">/</button><br>
+  </div>
+  <br>
+  <label>Kết Quả:</label><br>
+  <h1> {{result}}</h1>
+</div>
